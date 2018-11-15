@@ -1,0 +1,12 @@
+.boder-r-none{
+	border-right: none;
+}
+
+#nav-profile .tb-list-Student{
+	margin-top: 20px;
+	margin-left: 80px;
+	width: 75%;
+}
+	#nav-profile .tb-list-Student table {
+		text-align: center;
+	}
