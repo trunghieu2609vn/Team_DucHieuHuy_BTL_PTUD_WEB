@@ -1,3 +1,6 @@
+body{
+	overflow-y: scroll;
+}
 .text-btn-search{
 	font-weight: bold;
 	color: #fff;
@@ -36,7 +39,7 @@
 	
 .container{
 	margin-top: 100px;
-	
+	margin-bottom: 30px;
 }
 	.table-responsive{
 		box-shadow: 0 2px 6px #888;
@@ -44,15 +47,68 @@
 	.table-responsive table thead th{
 		border-right: 1px solid #fff;
 	}
-	.table-responsive table tbody tr{
+	.table-responsive table tbody tr .manager img{
 		cursor: pointer;
 	}
 	.table-responsive table tbody tr td,th{
 		border-right: 0.5px solid #ccc;
+
 	}
 	.table-responsive table tbody tr:hover td{
 		color: #1967C5;
 		border-right: 0.5px solid #ccc;
 	}
-	
+		.table-responsive table tbody .name-subject{
+			min-width: 250px;
+		}
+		.table-responsive table tbody .name-teacher{
+			min-width: 150px;
+		}
+.icon {
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+}
+.card{
+	box-shadow: 0 2px 6px #888;
+	min-width: 200px;
+	max-width: 400px;
+	margin-top: 20px;
+}
+.list-monhoc{
+	text-align: center;
+}
+.btn-toolbox{
+	width: 50px;
+	height: 26px;
+}
+.icon-toolbox{
+	height: 26px;
+	width: 26px;
+}
 
+.div-check{
+	width: inherit;
+    height: 32px;
+    display: flex;
+}
+	.div-check .checked {
+	    width: 22px;
+	    height: 22px;
+	    margin: 5px 0px;
+	    background-image: url('../Images/input-checkbox.png');
+	    background-repeat: no-repeat;
+	    background-position: -23px -23px;
+	    cursor: pointer;
+
+	}
+
+	.div-check .unchecked {
+	    width: 22px;
+	    height: 22px;
+	    margin: 5px 0px;
+	    background-image: url("../Images/input-checkbox.png");
+	    background-repeat: no-repeat;
+	    background-position: -23px 0px;
+	    cursor: pointer;
+	}

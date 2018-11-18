@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin</title>
+    <link rel="shortcut icon" href="Contents/Images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="Contents/CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Contents/CSS/sweet-alert.css">
+    <link rel="stylesheet" type="text/css" href="Contents/CSS/background.css">
+    <link rel="stylesheet" type="text/css" href="Contents/CSS/createSub.css">
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 fixed-top">
+		<a class="navbar-brand" href="../BTL_PTUD_WEB/AdminPage.html">Logo admin</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<form class="form-inline mr-auto mt-2 mt-md-0">
+				<input class="form-control mr-sm-2 " type="text" placeholder="Tìm kiếm khóa học" aria-label="Search">
+				<button class="btn btn-success-outline bg-primary text-btn-search" type="submit">Tìm kiếm</button>
+			</form>
+			<div class="navbar-user">
+				<span class="user-name" id="user-name">DoanTrungHieu</span>
+				<img src="Contents/Images/usericon.png">
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="container-create">
+			<img class="icon-add btn-create" src="Contents/Images/icon-add.png" title="Tạo mới khóa học">
+			<img class="icon-add" id="btn-edit" src="Contents/Images/icon-edit.png" title="Quản trị danh mục đánh giá">
+			<div class="create-subject" style="display: none;">
+				<label><h3>Tạo mới khóa học :</h3></label>
+				<form class="needs-validation" novalidate>
+				  	<div class="form-row">
+				    	<div class="col-md-4 mb-3">
+				      		<label for="validationCustom01">Tên khóa học</label>
+				      		<input type="text" class="form-control" id="validationCustom01" placeholder="Tên khóa học" required>
+				      		<div class="invalid-feedback">
+					        	Điền đầy đủ tên khóa học.
+					      	</div>
+				      		<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+				    	</div>
+				    	<div class="col-md-3 mb-3">
+				      		<label for="validationCustom02">Mã khóa học</label>
+				      		<input type="text" class="form-control" id="validationCustom02" placeholder="Mã khóa học" required>
+				      		<div class="invalid-feedback">
+					        	Điền đầy đủ mã khóa học.
+					      	</div>
+				      		<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+				    	</div>
+				  	</div>
+					<div class="form-row">
+					    <div class="col-md-4 mb-3">
+					      	<label for="validationCustom03">Tên giảng viên</label>
+					      	<input type="text" class="form-control" id="validationCustom03" placeholder="Tên giảng viên" required>
+					      	<div class="invalid-feedback">
+					        	Điền đầy đủ tên giảng viên.
+					      	</div>
+					      	<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+					    </div>
+					    <div class="col-md-2 mb-1">
+					      	<label for="validationCustom04">Số sinh viên</label>
+					      	<input type="text" class="form-control" id="validationCustom04" placeholder="Số sinh viên" required>
+					      	<div class="invalid-feedback">
+					        	Điền đây đủ số sinh viên.
+					      	</div>
+					      	<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+					    </div>
+					</div>
+					
+					<button class="btn btn-primary btn-create-course" type="submit">Thêm khóa học</button>
+				</form>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-hover list-monhoc">
+			  <thead class="thead-dark">
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Tên khóa học</th>
+			      <th scope="col">Mã khóa học</th>
+			      <th scope="col">Tên giảng viên</th>
+			      <th scope="col">Số SV</th>
+			      <th scope="col">Đã đánh giá</th>
+			      <th scope="col">Chưa đánh giá</th>
+			      <th scope="col" title="Xóa khóa học">Xóa KH</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td class="name-subject">Hệ quản trị cơ sở dữ liệu</td>
+			      <td class="id-subject">int 123456</td>
+			      <td class="name-teacher">TS. Lê Hồng Hải</td>
+			      <td class="sum-student-class">80</th>
+			      <td class="evaluated">60</td>
+			      <td class="un-evaluated">20</td>
+			      <td class="manager"><img class="icon delete-subject" src="Contents/Images/icon-delete.png"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td class="name-subject">PTTK Hệ thống thông tin</td>
+			      <td class="id-subject">abc 123456</td>
+			      <td class="name-teacher"></td>
+			      <td class="sum-student-class"></th>
+			      <td class="evaluated"></td>
+			      <td class="un-evaluated"></td>
+			      <td class="manager"><img class="icon delete-subject" src="Contents/Images/icon-delete.png"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td class="name-subject"></td>
+			      <td class="id-subject"></td>
+			      <td class="name-teacher"></td>
+			      <td class="sum-student-class"></th>
+			      <td class="evaluated"></td>
+			      <td class="un-evaluated"></td>
+			      <td class="manager"><img class="icon delete-subject" src="Contents/Images/icon-delete.png"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">4</th>
+			      <td class="name-subject"></td>
+			      <td class="id-subject"></td>
+			      <td class="name-teacher"></td>
+			      <td class="sum-student-class"></th>
+			      <td class="evaluated"></td>
+			      <td class="un-evaluated"></td>
+			      <td class="manager"><img class="icon delete-subject" src="Contents/Images/icon-delete.png"></td>
+			    </tr>
+			    
+			  </tbody>
+			</table>
+		</div>
+
+	</div>
+		
+	
+
+	<script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="Scripts/sweetalert.min.js"></script>
+	<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Scripts/ui_ux.js"></script>
+</body>
+</html>

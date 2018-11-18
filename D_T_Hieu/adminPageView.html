@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hệ quản trị cơ sở dữ liệu-int 123456</title>
+    <title>Admin-Quản trị danh mục đánh giá</title>
     <link rel="shortcut icon" href="Contents/Images/favicon.png">
     <link rel="stylesheet" type="text/css" href="Contents/CSS/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Contents/CSS/sweet-alert.css">
@@ -13,7 +13,7 @@
 <body>
 	
 	<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4 fixed-top">
-		<a class="navbar-brand" href="#">Logo admin</a>
+		<a class="navbar-brand" href="../BTL_PTUD_WEB/AdminPage.html">Logo admin</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -33,55 +33,64 @@
 		<nav>
 		  	<div class="nav nav-tabs" id="nav-tab" role="tablist">
 		    	<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Yêu cầu đánh giá môn</a>
-		    	<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Danh sách sinh viên</a>
+		    	<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Quản lý thay đổi</a>
 		  	</div>
 		</nav>
 		<div class="tab-content" id="nav-tabContent">
 		  	<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-		  		Thêm dữ liệu về : <br>
-		  		list các đánh giá của môn học <br>
-		  		theo dạng cây
-		  	</div>
+		  		<h3>Nhánh đánh giá 1</h3>
+		  	
+				<p>- Thầy có đẹp trai không !</p>
+				<div class="div-check">
+					<span class="unchecked"></span>
+				</div>
+				<h3>Nhánh đánh giá 2</h3>
+				<p>-Thiết bị giảng dạy</p>
+				<div class="div-check">
+					<span class="unchecked"></span>
+				</div>
+			</div>
+
 		  	<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-		  		<div class="table-responsive tb-list-Student">
+		  		<div class="table-responsive admin-status">
 					<table class="table table-hover">
 					  <thead class="table-active">
 					    <tr>
 					      <th scope="col">#</th>
-					      <th scope="col">Tên Sinh viên</th>
-					      <th scope="col">Mã sinh viên</th>
-					      <th scope="col">Trạng thái đánh giá</th>
+					      <th scope="col">Tên quản trị</th>
+					      <th scope="col">Mã quản trị</th>
+					      <th scope="col">Trạng thái thay đổi</th>
 					    </tr>
 					  </thead>
 					  <tbody>
 					  	<tr>
 					      <th scope="row">1</th>
-					      <td class="name-Student">Nguyễn Mậu Đức Huy</td>
-					      <td class="id-Student">16022379</td>
+					      <td class="name-admin">Nguyễn Mậu Đức Huy</td>
+					      <td class="id-admin">16022379</td>
 					      <td class="status"></td>
 					    </tr>
 					    <tr>
 					      <th scope="row">2</th>
-					      <td class="name-Student">Nguyễn Mậu Đức Huy</td>
-					      <td class="id-Student">16022379</td>
+					      <td class="name-admin">Nguyễn Mậu Đức Huy</td>
+					      <td class="id-admin">16022379</td>
 					      <td class="status"></td>
 					    </tr>
 					    <tr>
 					      <th scope="row">3</th>
-					      <td class="name-Student">Nguyễn Mậu Đức Huy</td>
-					      <td class="id-Student">16022379</td>
+					      <td class="name-admin">Nguyễn Mậu Đức Huy</td>
+					      <td class="id-admin">16022379</td>
 					      <td class="status"></td>
 					    </tr>
 					    <tr>
 					      <th scope="row">4</th>
-					      <td class="name-Student">Nguyễn Mậu Đức Huy</td>
-					      <td class="id-Student">16022379</td>
+					      <td class="name-admin">Nguyễn Mậu Đức Huy</td>
+					      <td class="id-admin">16022379</td>
 					      <td class="status"></td>
 					    </tr>
 					    <tr>
 					      <th scope="row">5</th>
-					      <td class="name-Student">Nguyễn Mậu Đức Huy</td>
-					      <td class="id-Student">16022379</td>
+					      <td class="name-admin">Nguyễn Mậu Đức Huy</td>
+					      <td class="id-admin">16022379</td>
 					      <td class="status"></td>
 					    </tr>
 					    
@@ -95,5 +104,6 @@
 	<script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="Scripts/sweetalert.min.js"></script>
 	<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Scripts/ui_ux.js"></script>
 </body>
 </html>

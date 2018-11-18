@@ -2,11 +2,14 @@
 	border-right: none;
 }
 
-#nav-profile .tb-list-Student{
+#nav-profile .admin-status{
 	margin-top: 20px;
 	margin-left: 80px;
 	width: 75%;
 }
-	#nav-profile .tb-list-Student table {
+	#nav-profile .admin-status table {
 		text-align: center;
 	}
+		#nav-profile .admin-status table tbody .status{
+			min-width: 400px;
+		}
