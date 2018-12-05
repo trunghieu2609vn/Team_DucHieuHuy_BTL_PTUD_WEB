@@ -1,6 +1,9 @@
 $('.btn-create').click(function() {
 	$('.create-subject').fadeToggle(500);
 });
+
+
+// xóa khóa học
 $('.delete-subject').click(function() {
 	var idSub = $(this).parent().siblings('.id-subject').text();
 	var id = idSub.toUpperCase();
@@ -21,6 +24,8 @@ $('.delete-subject').click(function() {
 	  	}
 	});
 });
+
+
 //sửa khóa học,tính năng tạm thời,sẽ dùng json đổ dữ liệu sau
 $('#btn-edit').click(function() {
 	window.open("../BTL_PTUD_WEB/adminPageView.html");
@@ -70,3 +75,20 @@ $('.div-check').children('.checked, .unchecked').click(function () {
     $(this).toggleClass('checked');
     $(this).toggleClass('unchecked');
 });
+
+
+//button quản lý
+
+$('.btn-manager button').click(function() {
+	var valueBtn = $(this).attr('name');
+	var valueName = $('.append-data div');
+	$.each(valueName,function (index,item) {
+		if (valueBtn == $(item).attr('name')) {
+			$(item).fadeIn(100);
+		}else{
+			$(item).fadeOut(100);
+		}
+	});
+});
+
+//hết button quản lý

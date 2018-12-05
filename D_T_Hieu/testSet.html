@@ -31,6 +31,84 @@
 	</nav>
 	
 	<div class="container">
+			<div class="container-create">
+				<div class="btn-manager">
+					<button type="button" class="btn btn-outline-secondary" id="ql-phieu-ks" name="phieu-ks">
+						Quản lý phiếu
+					</button>
+					<button type="button" class="btn btn-outline-primary" id="ql-tk-sv" name="tk-sv">
+						Quản lý sinh viên
+					</button>
+					<button type="button" class="btn btn-outline-success" id="ql-tk-gv" name="tk-gv">
+						Quản lý giảng viên
+					</button>
+					<button type="button" class="btn btn-outline-warning" id="ql-cuoc-ks" name="cuoc-ks">
+						Quản lý cuộc ks
+					</button>
+				</div>
+				<div class="append-data">
+					<div id="data-phieu-ks" style="display: none" name="phieu-ks"> phiếu</div>
+					<div id="data-tk-sv" style="display: none" name="tk-sv"> sinh viên</div>
+					<div id="data-tk-gv" style="display: none" name="tk-gv"> giảng viên</div>
+					<div id="data-cuoc-ks" style="display: none" name="cuoc-ks"> khảo sát</div>
+				</div>
+			</div>
+
+			<img class="icon-add btn-create" src="Contents/Images/icon-add.png" title="Tạo mới khóa học">
+			<img class="icon-add" id="btn-edit" src="Contents/Images/icon-edit.png" title="Quản trị danh mục đánh giá">
+
+			<div class="create-subject" style="display: none;">
+				<label><h3>Tạo mới khóa học :</h3></label>
+				<form class="needs-validation" novalidate>
+				  	<div class="form-row">
+				    	<div class="col-md-4 mb-3">
+				      		<label for="validationCustom01">Tên khóa học</label>
+				      		<input type="text" class="form-control" id="validationCustom01" placeholder="Tên khóa học" required>
+				      		<div class="invalid-feedback">
+					        	Điền đầy đủ tên khóa học.
+					      	</div>
+				      		<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+				    	</div>
+				    	<div class="col-md-3 mb-3">
+				      		<label for="validationCustom02">Mã khóa học</label>
+				      		<input type="text" class="form-control" id="validationCustom02" placeholder="Mã khóa học" required>
+				      		<div class="invalid-feedback">
+					        	Điền đầy đủ mã khóa học.
+					      	</div>
+				      		<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+				    	</div>
+				  	</div>
+					<div class="form-row">
+					    <div class="col-md-4 mb-3">
+					      	<label for="validationCustom03">Tên giảng viên</label>
+					      	<input type="text" class="form-control" id="validationCustom03" placeholder="Tên giảng viên" required>
+					      	<div class="invalid-feedback">
+					        	Điền đầy đủ tên giảng viên.
+					      	</div>
+					      	<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+					    </div>
+					    <div class="col-md-2 mb-1">
+					      	<label for="validationCustom04">Số sinh viên</label>
+					      	<input type="text" class="form-control" id="validationCustom04" placeholder="Số sinh viên" required>
+					      	<div class="invalid-feedback">
+					        	Điền đây đủ số sinh viên.
+					      	</div>
+					      	<div class="valid-feedback">
+				        		Looks good!
+				      		</div>
+					    </div>
+					</div>
+					
+					<button class="btn btn-primary btn-create-course" type="submit">Thêm khóa học</button>
+				</form>
+			</div>
+
 		<button type="button" class="btn bg-light" data-toggle="button" aria-pressed="false" autocomplete="off" style="height: 50px;">
 			<img class="icon-add btn-create" src="Contents/Images/icon-add.png" title="Tạo mới khóa học">
 		</button>

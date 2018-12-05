@@ -41,6 +41,9 @@ body{
 	margin-top: 100px;
 	margin-bottom: 30px;
 }
+	.container .btn-manager{
+		margin-bottom: 10px;
+	}
 	.table-responsive{
 		box-shadow: 0 2px 6px #888;
 	}
@@ -69,6 +72,12 @@ body{
 	width: 26px;
 	border-radius: 50%;
 }
+	.watch-sub{
+		box-shadow: 0 2px 6px #888;
+	}
+	.watch-sub:hover{
+		background-color: #AFEEE7;
+	}
 .card{
 	box-shadow: 0 2px 6px #888;
 	min-width: 200px;
