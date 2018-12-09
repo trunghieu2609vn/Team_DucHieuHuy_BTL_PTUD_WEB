@@ -1,7 +1,11 @@
 .boder-r-none{
 	border-right: none;
 }
-
+/*update 8/12 */
+.container nav div a{
+	font-weight: bold;
+}
+/*end*/
 #nav-profile .admin-status{
 	margin-top: 20px;
 	margin-left: 80px;
@@ -30,13 +34,14 @@
 }
 .note-result .note-item{
 	padding-left: 50px;
+	display: flex;
 }
 .note-result .note-item label{
 	font-style: italic;
 	font-weight: bold;
 }
 .note-result .note-item p{
-
+	margin-left: 10px;
 }
 
 /*end*/

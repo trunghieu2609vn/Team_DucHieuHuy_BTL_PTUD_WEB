@@ -61,41 +61,41 @@ $('.btn-manager button').click(function() {
 // ricycle
 	$('.btn-create-course').click(function() {
 	
-	swal({
-	  title: "Bạn có chắc chắn muốn thêm khóa học?",
-	  icon: "warning",
-	  buttons: true,
-	  dangerMode: true,
-	})
-	.then((willDelete) => {
-	  if (willDelete) {
-	    swal("Bạn đã thêm thành công khóa học!", {
-	      icon: "success",
-	    });
-	  } else {
-	    swal("Khóa học chưa được thêm!");
-	  }
+		swal({
+		  title: "Bạn có chắc chắn muốn thêm khóa học?",
+		  icon: "warning",
+		  buttons: true,
+		  dangerMode: true,
+		})
+		.then((willDelete) => {
+		  if (willDelete) {
+		    swal("Bạn đã thêm thành công khóa học!", {
+		      icon: "success",
+		    });
+		  } else {
+		    swal("Khóa học chưa được thêm!");
+		  }
+		});
 	});
-});
-	// xóa khóa học
-$('.delete-subject').click(function() {
-	var idSub = $(this).parent().siblings('.id-subject').text();
-	var id = idSub.toUpperCase();
-	swal({
-	  	title: "Bạn có chắc chắn muốn xóa?",
-	  	text: "Khi bạn xác nhận, khóa học "+ id+ " sẽ KHÔNG CÒN TỒN TẠI ở bất cứ đâu trên hệ thống!",
-	  	icon: "warning",
-	  	buttons: true,
-	  	dangerMode: true,
-	})
-	.then((willDelete) => {
-	  	if (willDelete) {
-	    	swal("Bạn đã xóa thành công khóa học!", {
-	      	icon: "success",
-	    	});
-	  	} else {
-	    	swal("Khóa học chưa bị xóa!");
-	  	}
+		// xóa khóa học
+	$('.delete-subject').click(function() {
+		var idSub = $(this).parent().siblings('.id-subject').text();
+		var id = idSub.toUpperCase();
+		swal({
+		  	title: "Bạn có chắc chắn muốn xóa?",
+		  	text: "Khi bạn xác nhận, khóa học "+ id+ " sẽ KHÔNG CÒN TỒN TẠI ở bất cứ đâu trên hệ thống!",
+		  	icon: "warning",
+		  	buttons: true,
+		  	dangerMode: true,
+		})
+		.then((willDelete) => {
+		  	if (willDelete) {
+		    	swal("Bạn đã xóa thành công khóa học!", {
+		      	icon: "success",
+		    	});
+		  	} else {
+		    	swal("Khóa học chưa bị xóa!");
+		  	}
+		});
 	});
-});
 // end

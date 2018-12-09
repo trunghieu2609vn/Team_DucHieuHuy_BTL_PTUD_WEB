@@ -1,0 +1,74 @@
+/*Thẻ đánh giá*/
+
+.card{
+	box-shadow: 0 2px 6px #888;
+	min-width: 200px;
+	max-width: 400px;
+	margin-top: 20px;
+	text-align: center;
+}
+.tc-list-class .survey-stt small,.sv-list-class .survey-stt small{
+	font-size: 18px;
+	font-weight: bold;
+}
+.tc-list-class a.btn-enter::after{
+	content: "Kết quả đánh giá";
+}
+
+.tc-list-class .survey-stt small.survey-done::after{
+	content: "Đã hoàn thành !";
+	color: #00DA38;
+}
+.tc-list-class .survey-stt small.survey-fault::after{
+	content: "Chưa hoàn thành !";
+	color: red;
+}
+
+.sv-list-class a.btn-enter::after{
+	content: "Đánh giá môn học";
+}
+.sv-list-class .survey-stt small.survey-done::after{
+	content: "Đã đánh giá !";
+	color: #00DA38;
+}
+.sv-list-class .survey-stt small.survey-fault::after{
+	content: "Chưa đánh giá !";
+	color: red;
+}
+/*end thẻ*/
+
+
+/*Sinh viên đánh giá*/
+#name-class{
+	background-color: #54C8FE;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 10px auto;
+	padding: 5px;	
+}
+.list-criteria{
+	margin: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.list-criteria .branch-criteria{
+	margin-bottom: 10px;
+}
+.list-criteria .branch-criteria .title-branch {
+	
+}
+.list-criteria .branch-criteria .node-branch{
+
+}
+.list-criteria .branch-criteria .node-branch .item-criteria{
+	list-style: none;
+	padding: 6px 0 2px;
+	border-bottom: 0.5px solid #77E7ea;
+	display: flex;
+}
+	.list-criteria .branch-criteria .node-branch .item-criteria:hover{
+		background-color: #F2EFEF;
+	}
+/*end sv đánh giá*/

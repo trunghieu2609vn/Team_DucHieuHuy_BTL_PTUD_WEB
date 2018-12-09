@@ -106,13 +106,7 @@ body{
 	.watch-sub:hover{
 		background-color: #AFEEE7;
 	}
-.card{
-	box-shadow: 0 2px 6px #888;
-	min-width: 200px;
-	max-width: 400px;
-	margin-top: 20px;
-	text-align: center;
-}
+
 .list-monhoc{
 	text-align: center;
 }
@@ -161,6 +155,8 @@ body{
 	display: flex;
 }
 
+
+
 /*thêm mới ngày 7/12 */
 table{
 	text-align: center;
@@ -192,3 +188,5 @@ nav .show>.btn-info.dropdown-toggle:focus {
 	padding-right: 10px;
 }
 /*end*/
+
+
