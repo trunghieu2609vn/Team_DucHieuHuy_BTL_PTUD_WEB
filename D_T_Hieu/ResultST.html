@@ -35,47 +35,150 @@
 	</nav>
 	<div class="container">
 		<div class="text-center" id="name-class">Phát triển ứng dụng Web - int1 2345</div>
-		<div class="list-criteria">
+		<form class="list-criteria">
 			<div class="branch-criteria">
 				<div class="title-branch">
-					<h3>Nhánh 1</h3>
+					<h3>1. Cơ sở vật chất</h3>
 				</div>
 				<div class="node-branch">
 					<ul>
-						<li class="item-criteria justify-content-between">
-							<span>Tiêu chí 1</span>
+						<li class="item-criteria" id="ic-1-1">
+							<span>Giảng đường đáp ứng yêu cầu môn học </span>
+							<div class="gr-radio justify-content-end">
+								<div class="c-inputs-stacked">
+									<label class="radio-item">
+										<input id="r-s-1" name="cri-1-1" type="radio" value="2">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-2" name="cri-1-1" type="radio" value="4">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-3" name="cri-1-1" type="radio" value="6">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-4" name="cri-1-1" type="radio" value="8">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-5" name="cri-1-1" type="radio" value="10">
+									</label>
+								</div>
+							</div>
 						</li>
-						<li class="item-criteria">
-							<span>Tiêu chí 1</span>
-						</li>
-						<li class="item-criteria">
-							<span>Tiêu chí 1</span>
-						</li>
-						<li class="item-criteria">
-							<span>Tiêu chí 1</span>
+						<li class="item-criteria" id="ic-1-2">
+							<span>Các trang thiết bị tại giảng đường đáp ứng yêu cầu giảng dạy và học tập</span>
+							<div class="gr-radio justify-content-end">
+								<div class="c-inputs-stacked">
+									<label class="radio-item">
+										<input id="r-s-1" name="cri-1-2" type="radio" value="2">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-2" name="cri-1-2" type="radio" value="4">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-3" name="cri-1-2" type="radio" value="6">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-4" name="cri-1-2" type="radio" value="8">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-5" name="cri-1-2" type="radio" value="10">
+									</label>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="branch-criteria">
 				<div class="title-branch">
-					<h3>Nhánh 1</h3>
+					<h3>Nhánh 2</h3>
 				</div>
 				<div class="node-branch">
 					<ul>
-						<li class="item-criteria">1</li>
-						<li class="item-criteria">2</li>
-						<li class="item-criteria">3</li>
-						<li class="item-criteria">4</li>
+						<li class="item-criteria" id="ic-2-1">
+							<span>Tiêu chí 1</span>
+							<div class="gr-radio justify-content-end">
+								<div class="c-inputs-stacked">
+									<label class="radio-item">
+										<input id="r-s-1" name="cri-2-1" type="radio" value="2">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-2" name="cri-2-1" type="radio" value="4">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-3" name="cri-2-1" type="radio" value="6">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-4" name="cri-2-1" type="radio" value="8">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-5" name="cri-2-1" type="radio" value="10">
+									</label>
+								</div>
+							</div>
+						</li>
+						<li class="item-criteria" id="ic-2-2">
+							<span>Tiêu chí 1</span>
+							<div class="gr-radio justify-content-end">
+								<div class="c-inputs-stacked">
+									<label class="radio-item">
+										<input id="r-s-1" name="cri-2-2" type="radio" value="2">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-2" name="cri-2-2" type="radio" value="5">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-3" name="cri-2-2" type="radio" value="6">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-4" name="cri-2-2" type="radio" value="8">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-5" name="cri-2-2" type="radio" value="10">
+									</label>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
-		</div>
+			<button type="submit" class="btn btn-primary" id="send-result-st">Nộp kết quả!</button>
+		</form>
 		
 	</div>
 	<script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
 	<script type="text/javascript" src="Scripts/ui_ux.js"></script>
 	<script type="text/javascript" src="Scripts/st_tc.js"></script>
+	<script type="text/javascript">
+		$('.list-criteria').ready(function() {
+			$('.radio-item #r-s-1').hover(function() {
+				$(this).attr('title', 'Hoàn toàn không đồng ý');
+			}, function() {
+				$(this).removeAttr('title');
+			});
+			$('.radio-item #r-s-2').hover(function() {
+				$(this).parent($(this)).attr('title', 'Không đồng ý');
+			}, function() {
+				$(this).removeAttr('title');
+			});
+			$('.radio-item #r-s-3').hover(function() {
+				$(this).parent($(this)).attr('title', 'Bình thường');
+			}, function() {
+				$(this).removeAttr('title');
+			});
+			$('.radio-item #r-s-4').hover(function() {
+				$(this).parent($(this)).attr('title', 'Đồng ý');
+			}, function() {
+				$(this).removeAttr('title');
+			});
+			$('.radio-item #r-s-5').hover(function() {
+				$(this).parent($(this)).attr('title', 'Hoàn toàn đồng ý');
+			}, function() {
+				$(this).removeAttr('title');
+			});
+
+		});
+	</script>
 </body>
 </html>
