@@ -42,6 +42,13 @@
 				</div>
 				<div class="node-branch">
 					<ul>
+						<li class="gr-point">
+							<label class="point-cri">2</label>
+							<label class="point-cri">4</label>
+							<label class="point-cri">6</label>
+							<label class="point-cri">8</label>
+							<label class="point-cri">10</label>
+						</li>
 						<li class="item-criteria" id="ic-1-1">
 							<span>Giảng đường đáp ứng yêu cầu môn học </span>
 							<div class="gr-radio justify-content-end">
@@ -95,6 +102,13 @@
 				</div>
 				<div class="node-branch">
 					<ul>
+						<li class="gr-point">
+							<label class="point-cri">2</label>
+							<label class="point-cri">4</label>
+							<label class="point-cri">6</label>
+							<label class="point-cri">8</label>
+							<label class="point-cri">10</label>
+						</li>
 						<li class="item-criteria" id="ic-2-1">
 							<span>Tiêu chí 1</span>
 							<div class="gr-radio justify-content-end">
@@ -139,8 +153,41 @@
 								</div>
 							</div>
 						</li>
+						<li class="item-criteria" id="ic-2-3">
+							<span>Tiêu chí 1</span>
+							<div class="gr-radio justify-content-end">
+								<div class="c-inputs-stacked">
+									<label class="radio-item">
+										<input id="r-s-1" name="cri-2-3" type="radio" value="2">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-2" name="cri-2-3" type="radio" value="5">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-3" name="cri-2-3" type="radio" value="6">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-4" name="cri-2-3" type="radio" value="8">
+									</label>
+									<label class="radio-item">
+										<input id="r-s-5" name="cri-2-3" type="radio" value="10">
+									</label>
+								</div>
+							</div>
+						</li>
 					</ul>
 				</div>
+			</div>
+			<div class="branch-criteria">
+				<div class="title-branch">
+					<h3>Phản hồi :</h3>
+				</div>
+				<div class="node-branch">
+					<textarea class="cri-feedback" placeholder="Bạn có suy nghĩ, ý kiến gì về môn học ..."></textarea>
+				</div>
+			</div>
+			<div class="progress progress-cri">
+  				<div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
 			<button type="submit" class="btn btn-primary" id="send-result-st">Nộp kết quả!</button>
 		</form>
@@ -150,35 +197,5 @@
 	<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
 	<script type="text/javascript" src="Scripts/ui_ux.js"></script>
 	<script type="text/javascript" src="Scripts/st_tc.js"></script>
-	<script type="text/javascript">
-		$('.list-criteria').ready(function() {
-			$('.radio-item #r-s-1').hover(function() {
-				$(this).attr('title', 'Hoàn toàn không đồng ý');
-			}, function() {
-				$(this).removeAttr('title');
-			});
-			$('.radio-item #r-s-2').hover(function() {
-				$(this).parent($(this)).attr('title', 'Không đồng ý');
-			}, function() {
-				$(this).removeAttr('title');
-			});
-			$('.radio-item #r-s-3').hover(function() {
-				$(this).parent($(this)).attr('title', 'Bình thường');
-			}, function() {
-				$(this).removeAttr('title');
-			});
-			$('.radio-item #r-s-4').hover(function() {
-				$(this).parent($(this)).attr('title', 'Đồng ý');
-			}, function() {
-				$(this).removeAttr('title');
-			});
-			$('.radio-item #r-s-5').hover(function() {
-				$(this).parent($(this)).attr('title', 'Hoàn toàn đồng ý');
-			}, function() {
-				$(this).removeAttr('title');
-			});
-
-		});
-	</script>
 </body>
 </html>
